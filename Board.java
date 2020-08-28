@@ -43,7 +43,63 @@ public class Board extends JPanel
 		g.drawRect(601, 13, 97, 40);
 		g.drawString("Turn: " + currentTurn, 605, 38);
 		
-		Pieces pieces = new Pieces(g);
+		//Red piece objects
+		Pieces r1 = new Pieces(g);
+		Pieces r2 = new Pieces(g);
+		Pieces r3 = new Pieces(g);
+		Pieces r4 = new Pieces(g);
+		Pieces r5 = new Pieces(g);
+		Pieces r6 = new Pieces(g);
+		Pieces r7 = new Pieces(g);
+		Pieces r8 = new Pieces(g);
+		Pieces r9 = new Pieces(g);
+		Pieces r10 = new Pieces(g);
+		Pieces r11 = new Pieces(g);
+		Pieces r12 = new Pieces(g);
+
+		//White piece objects
+		Pieces w1 = new Pieces(g);
+		Pieces w2 = new Pieces(g);
+		Pieces w3 = new Pieces(g);
+		Pieces w4 = new Pieces(g);
+		Pieces w5 = new Pieces(g);
+		Pieces w6 = new Pieces(g);
+		Pieces w7 = new Pieces(g);
+		Pieces w8 = new Pieces(g);
+		Pieces w9 = new Pieces(g);
+		Pieces w10 = new Pieces(g);
+		Pieces w11 = new Pieces(g);
+		Pieces w12 = new Pieces(g);
+		
+		board = new Pieces[24][24];
+		
+		//Red positions
+		board[0][1] = r1;
+		board[0][3] = r2;
+		board[0][5] = r3;
+		board[0][7] = r4;
+		board[1][0] = r5;
+		board[1][2] = r6;
+		board[1][4] = r7;
+		board[1][6] = r8;
+		board[2][1] = r1;
+		board[2][3] = r2;
+		board[2][5] = r3;
+		board[2][7] = r4;
+		
+		//White positions
+		board[5][1] = r1;
+		board[5][3] = r2;
+		board[5][5] = r3;
+		board[5][7] = r4;
+		board[6][0] = r5;
+		board[6][2] = r6;
+		board[6][4] = r7;
+		board[6][6] = r8;
+		board[7][1] = r1;
+		board[7][3] = r2;
+		board[7][5] = r3;
+		board[7][7] = r4;
 		
 		boolean b = false;
 		
